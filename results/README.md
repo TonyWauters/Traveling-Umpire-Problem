@@ -67,7 +67,7 @@ Historical solution downloads disappeared from the live legacy server. See [`../
 | umps14C | 5 | 3 | 148349.0 | 148349 | optimal | Toffolo et al. (2015-02-03) | Toffolo et al. (2015-02-03) | — |
 | umps14C | 5 | 2 | 134916.0 | 134916 | optimal | Toffolo et al. (2015-02-03) | Toffolo et al. (2015-02-03) | — |
 | umps16 | 8 | 4 | 193457.1 | — | infeasible | Toffolo et al. (2014-02-28) | Toffolo et al. (2014-02-28) | — |
-| umps16 | 8 | 3 | 162902.0 | 189415 | 14.00% | Toffolo et al. (2015-02-03) | Toffolo et al. (2015-02-03) | — |
+| umps16 | 8 | 3 | 162902.0 | 178929 | 8.96% | Toffolo et al. (2015-02-03) | Tony Wauters (2026-09-16) | [file](../submissions/tony-wauters/umps16_8_3.txt) |
 | umps16 | 8 | 2 | 156088.1 | 161999 | 3.65% | Xue et al. (2014-03-21) | Toffolo et al. (2014-02-28) | — |
 | umps16 | 7 | 4 | 197028.0 | 197028 | optimal | Toffolo et al. (2015-02-03) | Toffolo et al. (2015-02-03) | — |
 | umps16 | 7 | 3 | 165765.0 | 165765 | optimal | Toffolo et al. (2015-02-03) | Toffolo et al. (2015-02-03) | — |
