@@ -46,7 +46,11 @@ The first command checks metadata and invokes the Java validator. The second con
 
 Do not edit `results/best-known.csv`, `results/submissions.csv`, or `results/README.md` for a normal solution submission. They are generated after merge. A valid submission is always recorded in `results/submissions.csv`; it becomes the displayed upper bound only when it is strictly better, or supplies an artifact for an equal bound whose historical file is missing.
 
-Maintainers should require the **Validate benchmark** check before merging. The post-merge workflow needs `contents: write` permission under the repository's Actions settings and, where branch rules require it, narrowly scoped permission to push its generated-results commit.
+Maintainers should require the **validate** job from **Validate benchmark** before merging. After a submission is merged, **Publish accepted results** rebuilds the generated files and opens or updates a pull request from `automation/update-results` to `main`. A maintainer reviews and merges that results pull request after validation passes. The workflow does not push directly to protected `main`.
+
+In **Settings → Actions → General → Workflow permissions**, enable **Allow GitHub Actions to create and approve pull requests**. The publishing workflow declares `contents: write` and `pull-requests: write` to maintain the results pull request, plus `actions: write` to explicitly dispatch **Validate benchmark** on its branch using the built-in `GITHUB_TOKEN`. This runs the required `validate` check without a personal access token or branch-protection bypass.
+
+To recover a failed publication, first merge the workflow fix, then select **Actions → Publish accepted results → Run workflow** on `main`. This rebuilds results from all currently accepted submissions. If the generated files are already current, no results pull request is needed.
 
 ## Submit a lower bound or infeasibility proof
 
