@@ -1,0 +1,36 @@
+name: Add a TUP publication
+description: Propose a missing publication that directly studies TUP.
+title: "[Publication] "
+labels: ["publication"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+    validations:
+      required: true
+  - type: input
+    id: authors
+    attributes:
+      label: Authors
+    validations:
+      required: true
+  - type: input
+    id: venue
+    attributes:
+      label: Venue and year
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: DOI or stable URL
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: TUP relevance
+      description: Briefly state which TUP model, instances, or results the work studies.
+    validations:
+      required: true

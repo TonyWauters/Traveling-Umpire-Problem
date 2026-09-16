@@ -1,0 +1,28 @@
+name: Validate benchmark
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "8"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check benchmark data and reference validator result
+        run: python3 -m unittest discover -s tests -v
+      - name: Validate all contributed solutions
+        run: python3 scripts/validate_submission.py --all
+      - name: Check that all valid submissions can be incorporated
+        run: python3 scripts/update_results.py --dry-run
