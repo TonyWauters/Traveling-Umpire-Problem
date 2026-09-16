@@ -1,0 +1,8 @@
+{
+  "authors": ["Tony Wauters"],
+  "algorithm": "Improved version of the branch-and-bound algorithm from Toffolo et al. (2016).",
+  "institution": "KU Leuven",
+  "submitted": "2026-09-16",
+  "publication": "",
+  "notes": "This is a first submission from this new experimental algorithm."
+}
