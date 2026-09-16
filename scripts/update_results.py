@@ -11,6 +11,7 @@ from copy import deepcopy
 from decimal import Decimal
 from pathlib import Path
 
+from validate_legacy import legacy_solutions
 from validate_submission import ROOT, SubmissionError, submission_files, validate_submission
 
 
@@ -77,6 +78,13 @@ def build() -> tuple[list[dict[str, str]], list[dict[str, object]]]:
     by_key = {(row["instance"], int(row["q1"]), int(row["q2"])): row for row in best}
     ledger: list[dict[str, object]] = []
 
+    for result in legacy_solutions():
+        key = (result["instance"], result["q1"], result["q2"])
+        row = by_key.get(key)
+        if row is not None and row["upper_bound"] == str(result["cost"]) and not row["solution"]:
+            # An equal-cost artifact supplies a download without changing attribution.
+            row["solution"] = result["solution"]
+
     for path in submission_files():
         result = validate_submission(path)
         ledger_row = {field: result.get(field, "") for field in LEDGER_FIELDS}
@@ -128,7 +136,7 @@ def markdown(best: list[dict[str, str]]) -> str:
     lines = [
         "# Best-known results",
         "",
-        "This table is generated from [`legacy-best-known.csv`](legacy-best-known.csv) and validated community submissions. The legacy snapshot was migrated from the benchmark website on 2026-09-15; the dates in the table are the original result dates.",
+        "This table is generated from [`legacy-best-known.csv`](legacy-best-known.csv), validated restored legacy solutions, and validated community submissions. The legacy snapshot was migrated from the benchmark website on 2026-09-15; the dates in the table are the original result dates.",
         "",
         "A decimal lower bound is valid even though every feasible solution has an integer cost. The displayed gap is `(upper bound - lower bound) / upper bound`. Blank cells mean the legacy benchmark did not report that side of the bound.",
         "",
@@ -141,7 +149,7 @@ def markdown(best: list[dict[str, str]]) -> str:
         "- [`legacy-groups.csv`](legacy-groups.csv): originator, publication, and submission metadata",
         "- [`legacy-results.csv`](legacy-results.csv): all 506 rows shown on the 17 legacy result-group pages",
         "",
-        "Historical solution downloads disappeared from the live legacy server. See [`../solutions/legacy/README.md`](../solutions/legacy/README.md) for the placeholder layout used to restore local copies.",
+        "Restored historical solution files are available under [`../solutions/legacy/`](../solutions/legacy/). The generator checks their feasibility and recorded costs before linking files that attain the displayed upper bound. Original bounds, dates, originators, and source URLs remain in the immutable legacy CSVs. An equal-cost file can come from a later result group than the first originator of the bound; see the [restoration notes](../solutions/legacy/README.md).",
         "",
         "| Instance | q1 | q2 | Lower bound | Upper bound | Status / gap | Lower-bound originator | Upper-bound originator | Solution |",
         "|---|---:|---:|---:|---:|---|---|---|---|",
@@ -178,7 +186,7 @@ def markdown(best: list[dict[str, str]]) -> str:
             "",
             "## Updating the table",
             "",
-            "Do not edit `best-known.csv`, `submissions.csv`, or this file by hand for a solution submission. Follow [`../CONTRIBUTING.md`](../CONTRIBUTING.md); the post-merge workflow rebuilds them from validated files under `submissions/`.",
+            "Do not edit `best-known.csv`, `submissions.csv`, or this file by hand. Run `python3 scripts/update_results.py` from the repository root to rebuild them from the legacy snapshot, validated restored artifacts, and community submissions. Follow [`../CONTRIBUTING.md`](../CONTRIBUTING.md) for submissions and historical restorations.",
             "",
         ]
     )
@@ -203,7 +211,7 @@ def main() -> int:
         README: markdown(best),
     }
     if args.dry_run:
-        print(f"Validated {len(ledger)} submission(s); would publish {len(best)} result rows.")
+        print(f"Validated restored legacy solutions and {len(ledger)} submission(s); would publish {len(best)} result rows.")
         return 0
     if args.check:
         stale = [path for path, content in rendered.items() if not path.is_file() or path.read_text() != content]

@@ -58,7 +58,9 @@ The Java tool validates feasible solutions but cannot certify lower bounds. Open
 
 ## Restore legacy solution files
 
-The old site's solution URLs now return 404. If you have the original archives, follow [`solutions/legacy/README.md`](solutions/legacy/README.md). Please preserve the bytes and legacy names, and mention the group ID and source in the pull request.
+The restored collection and its validation notes are described in [`solutions/legacy/README.md`](solutions/legacy/README.md). For additional original files or archives, preserve the bytes and legacy names, and mention the directory/group ID and source in the pull request.
+
+Run `python3 scripts/validate_legacy.py` to check restored downloads against the costs in `results/legacy-results.csv`, then `python3 scripts/update_results.py` to regenerate their links. Include the generated result changes in a historical-restoration pull request and verify them with `python3 scripts/update_results.py --check`. Original legacy CSVs retain their migrated values and source URLs; restored files are linked automatically only when they match a published download and the displayed upper-bound cost. Legacy artifacts do not need community-submission JSON metadata.
 
 ## Add a publication
 

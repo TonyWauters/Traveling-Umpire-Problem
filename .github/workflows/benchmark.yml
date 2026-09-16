@@ -25,5 +25,5 @@ jobs:
         run: python3 -m unittest discover -s tests -v
       - name: Validate all contributed solutions
         run: python3 scripts/validate_submission.py --all
-      - name: Check that all valid submissions can be incorporated
+      - name: Validate restored legacy costs and incorporate valid submissions
         run: python3 scripts/update_results.py --dry-run
