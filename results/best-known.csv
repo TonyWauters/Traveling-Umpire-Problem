@@ -12,82 +12,82 @@ umps10,5,2,48942.0,Trick et al.,2011-10-17,48942,Trick et al.,2011-10-17,optimal
 umps10A,5,2,46551.0,Trick et al.,2011-10-17,46551,Trick et al.,2011-10-17,optimal,,
 umps10B,5,2,45609.0,Trick et al.,2011-10-17,45609,Trick et al.,2011-10-17,optimal,,
 umps10C,5,2,43149.0,Trick et al.,2011-10-17,43149,Trick et al.,2011-10-17,optimal,,
-umps12,7,2,86889.0,Toffolo et al.,2015-02-03,86889,Toffolo et al.,2015-02-03,optimal,,
+umps12,7,2,86889.0,Toffolo et al.,2015-02-03,86889,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps12_7_2.txt
 umps12,6,3,95259.3,Xue et al.,2014-03-21,,Trick et al.,2011-10-17,infeasible,,
-umps12,5,3,93679.0,Toffolo et al.,2015-02-03,93679,Toffolo et al.,2015-02-03,optimal,,
-umps12,4,3,89826.0,Toffolo et al.,2015-02-03,89826,Toffolo et al.,2015-02-03,optimal,,
-umps14,8,3,172177.0,Toffolo et al.,2015-02-03,172177,Toffolo et al.,2015-02-03,optimal,,
-umps14,8,2,147824.0,Toffolo et al.,2015-02-03,147824,Toffolo et al.,2015-02-03,optimal,,
-umps14,7,3,164440.0,Toffolo et al.,2015-02-03,164440,Wauters et al.,2013-11-05,optimal,,
-umps14,7,2,146656.0,Toffolo et al.,2015-02-03,146656,Toffolo et al.,2015-02-03,optimal,,
-umps14,6,3,158875.0,Toffolo et al.,2015-02-03,158875,Toffolo et al.,2015-02-03,optimal,,
-umps14,6,2,145124.0,Toffolo et al.,2015-02-03,145124,Toffolo et al.,2015-02-03,optimal,,
-umps14,5,3,154962.0,Xue et al.,2014-03-21,154962,Xue et al.,2014-03-21,optimal,,
-umps14,5,2,143357.0,Toffolo et al.,2015-02-03,143357,Toffolo et al.,2015-02-03,optimal,,
-umps14A,8,3,166184.0,Toffolo et al.,2015-02-03,166184,Toffolo et al.,2015-02-03,optimal,,
-umps14A,8,2,143043.0,Toffolo et al.,2015-02-03,143043,Toffolo et al.,2015-02-03,optimal,,
-umps14A,7,3,158760.0,Toffolo et al.,2015-02-03,158760,Wauters et al.,2013-11-05,optimal,,
-umps14A,7,2,140562.0,Toffolo et al.,2015-02-03,140562,Toffolo et al.,2015-02-03,optimal,,
-umps14A,6,3,152981.0,Toffolo et al.,2015-02-03,152981,Toffolo et al.,2015-02-03,optimal,,
-umps14A,6,2,138927.0,Toffolo et al.,2015-02-03,138927,Toffolo et al.,2015-02-03,optimal,,
-umps14A,5,3,149331.0,Xue et al.,2014-03-21,149331,Xue et al.,2014-03-21,optimal,,
-umps14A,5,2,137853.0,Toffolo et al.,2015-02-03,137853,Toffolo et al.,2015-02-03,optimal,,
-umps14B,8,3,165026.0,Toffolo et al.,2015-02-03,165026,Toffolo et al.,2015-02-03,optimal,,
-umps14B,8,2,141312.0,Toffolo et al.,2015-02-03,141312,Toffolo et al.,2015-02-03,optimal,,
-umps14B,7,3,157884.0,Toffolo et al.,2015-02-03,157884,Wauters et al.,2013-11-05,optimal,,
-umps14B,7,2,138998.0,Toffolo et al.,2015-02-03,138998,Toffolo et al.,2015-02-03,optimal,,
-umps14B,6,3,152740.0,Toffolo et al.,2015-02-03,152740,Wauters et al.,2013-11-05,optimal,,
-umps14B,6,2,138241.0,Toffolo et al.,2015-02-03,138241,Toffolo et al.,2015-02-03,optimal,,
-umps14B,5,3,149455.0,Oliveira et al.,2014-09-03,149455,Oliveira et al.,2014-09-03,optimal,,
-umps14B,5,2,136069.0,Toffolo et al.,2015-02-03,136069,Toffolo et al.,2015-02-03,optimal,,
-umps14C,8,3,161262.0,Toffolo et al.,2015-02-03,161262,Toffolo et al.,2015-02-03,optimal,,
-umps14C,8,2,141015.0,Toffolo et al.,2015-02-03,141015,Toffolo et al.,2015-02-03,optimal,,
-umps14C,7,3,154913.0,Toffolo et al.,2015-02-03,154913,Wauters et al.,2013-11-05,optimal,,
-umps14C,7,2,138832.0,Toffolo et al.,2015-02-03,138832,Toffolo et al.,2015-02-03,optimal,,
-umps14C,6,3,150858.0,Toffolo et al.,2015-02-03,150858,Wauters et al.,2013-11-05,optimal,,
-umps14C,6,2,136394.0,Toffolo et al.,2015-02-03,136394,Toffolo et al.,2015-02-03,optimal,,
-umps14C,5,3,148349.0,Toffolo et al.,2015-02-03,148349,Toffolo et al.,2015-02-03,optimal,,
-umps14C,5,2,134916.0,Toffolo et al.,2015-02-03,134916,Toffolo et al.,2015-02-03,optimal,,
+umps12,5,3,93679.0,Toffolo et al.,2015-02-03,93679,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps12_5_3.txt
+umps12,4,3,89826.0,Toffolo et al.,2015-02-03,89826,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps12_4_3.txt
+umps14,8,3,172177.0,Toffolo et al.,2015-02-03,172177,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14_8_3.txt
+umps14,8,2,147824.0,Toffolo et al.,2015-02-03,147824,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14_8_2.txt
+umps14,7,3,164440.0,Toffolo et al.,2015-02-03,164440,Wauters et al.,2013-11-05,optimal,,solutions/legacy/14/umps14_7_3.txt
+umps14,7,2,146656.0,Toffolo et al.,2015-02-03,146656,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14_7_2.txt
+umps14,6,3,158875.0,Toffolo et al.,2015-02-03,158875,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14_6_3.txt
+umps14,6,2,145124.0,Toffolo et al.,2015-02-03,145124,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14_6_2.txt
+umps14,5,3,154962.0,Xue et al.,2014-03-21,154962,Xue et al.,2014-03-21,optimal,,solutions/legacy/14/umps14_5_3.txt
+umps14,5,2,143357.0,Toffolo et al.,2015-02-03,143357,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14_5_2.txt
+umps14A,8,3,166184.0,Toffolo et al.,2015-02-03,166184,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14A_8_3.txt
+umps14A,8,2,143043.0,Toffolo et al.,2015-02-03,143043,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14A_8_2.txt
+umps14A,7,3,158760.0,Toffolo et al.,2015-02-03,158760,Wauters et al.,2013-11-05,optimal,,solutions/legacy/14/umps14A_7_3.txt
+umps14A,7,2,140562.0,Toffolo et al.,2015-02-03,140562,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14A_7_2.txt
+umps14A,6,3,152981.0,Toffolo et al.,2015-02-03,152981,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14A_6_3.txt
+umps14A,6,2,138927.0,Toffolo et al.,2015-02-03,138927,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14A_6_2.txt
+umps14A,5,3,149331.0,Xue et al.,2014-03-21,149331,Xue et al.,2014-03-21,optimal,,solutions/legacy/14/umps14A_5_3.txt
+umps14A,5,2,137853.0,Toffolo et al.,2015-02-03,137853,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14A_5_2.txt
+umps14B,8,3,165026.0,Toffolo et al.,2015-02-03,165026,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14B_8_3.txt
+umps14B,8,2,141312.0,Toffolo et al.,2015-02-03,141312,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14B_8_2.txt
+umps14B,7,3,157884.0,Toffolo et al.,2015-02-03,157884,Wauters et al.,2013-11-05,optimal,,solutions/legacy/14/umps14B_7_3.txt
+umps14B,7,2,138998.0,Toffolo et al.,2015-02-03,138998,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14B_7_2.txt
+umps14B,6,3,152740.0,Toffolo et al.,2015-02-03,152740,Wauters et al.,2013-11-05,optimal,,solutions/legacy/14/umps14B_6_3.txt
+umps14B,6,2,138241.0,Toffolo et al.,2015-02-03,138241,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14B_6_2.txt
+umps14B,5,3,149455.0,Oliveira et al.,2014-09-03,149455,Oliveira et al.,2014-09-03,optimal,,solutions/legacy/14/umps14B_5_3.txt
+umps14B,5,2,136069.0,Toffolo et al.,2015-02-03,136069,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14B_5_2.txt
+umps14C,8,3,161262.0,Toffolo et al.,2015-02-03,161262,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14C_8_3.txt
+umps14C,8,2,141015.0,Toffolo et al.,2015-02-03,141015,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14C_8_2.txt
+umps14C,7,3,154913.0,Toffolo et al.,2015-02-03,154913,Wauters et al.,2013-11-05,optimal,,solutions/legacy/14/umps14C_7_3.txt
+umps14C,7,2,138832.0,Toffolo et al.,2015-02-03,138832,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14C_7_2.txt
+umps14C,6,3,150858.0,Toffolo et al.,2015-02-03,150858,Wauters et al.,2013-11-05,optimal,,solutions/legacy/14/umps14C_6_3.txt
+umps14C,6,2,136394.0,Toffolo et al.,2015-02-03,136394,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14C_6_2.txt
+umps14C,5,3,148349.0,Toffolo et al.,2015-02-03,148349,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14C_5_3.txt
+umps14C,5,2,134916.0,Toffolo et al.,2015-02-03,134916,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps14C_5_2.txt
 umps16,8,4,193457.1,Toffolo et al.,2014-02-28,,Toffolo et al.,2014-02-28,infeasible,,
 umps16,8,3,162902.0,Toffolo et al.,2015-02-03,178929,Tony Wauters,2026-09-16,open,8.96,submissions/tony-wauters/umps16_8_3.txt
 umps16,8,2,156088.1,Xue et al.,2014-03-21,161999,Toffolo et al.,2014-02-28,open,3.65,
-umps16,7,4,197028.0,Toffolo et al.,2015-02-03,197028,Toffolo et al.,2015-02-03,optimal,,
-umps16,7,3,165765.0,Toffolo et al.,2015-02-03,165765,Toffolo et al.,2015-02-03,optimal,,
-umps16,7,2,150433.0,Toffolo et al.,2015-02-03,150433,Toffolo et al.,2015-02-03,optimal,,
+umps16,7,4,197028.0,Toffolo et al.,2015-02-03,197028,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16_7_4.txt
+umps16,7,3,165765.0,Toffolo et al.,2015-02-03,165765,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16_7_3.txt
+umps16,7,2,150433.0,Toffolo et al.,2015-02-03,150433,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16_7_2.txt
 umps16A,8,4,206141.2,Xue et al.,2014-03-21,,Toffolo et al.,2014-02-28,infeasible,,
-umps16A,8,3,175590.0,Toffolo et al.,2015-02-03,214512,Toffolo et al.,2015-02-03,open,18.14,
-umps16A,8,2,168274.4,Xue et al.,2014-03-21,171882,Toffolo et al.,2014-02-28,open,2.10,
-umps16A,7,4,213416.0,Toffolo et al.,2015-02-03,213416,Toffolo et al.,2015-02-03,optimal,,
-umps16A,7,3,178511.0,Toffolo et al.,2015-02-03,178511,Toffolo et al.,2015-02-03,optimal,,
-umps16A,7,2,163709.0,Toffolo et al.,2015-02-03,163709,Toffolo et al.,2015-02-03,optimal,,
+umps16A,8,3,175590.0,Toffolo et al.,2015-02-03,214512,Toffolo et al.,2015-02-03,open,18.14,solutions/legacy/14/umps16A_8_3.txt
+umps16A,8,2,168274.4,Xue et al.,2014-03-21,171882,Toffolo et al.,2014-02-28,open,2.10,solutions/legacy/52/umps16A_8_2.txt
+umps16A,7,4,213416.0,Toffolo et al.,2015-02-03,213416,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16A_7_4.txt
+umps16A,7,3,178511.0,Toffolo et al.,2015-02-03,178511,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16A_7_3.txt
+umps16A,7,2,163709.0,Toffolo et al.,2015-02-03,163709,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16A_7_2.txt
 umps16B,8,4,215520.6,Xue et al.,2014-03-21,,Toffolo et al.,2014-02-28,infeasible,,
-umps16B,8,3,178821.0,Toffolo et al.,2015-02-03,217764,Toffolo et al.,2015-02-03,open,17.88,
-umps16B,8,2,170384.4,Xue et al.,2014-03-21,180540,Toffolo et al.,2017-07-22,open,5.63,
-umps16B,7,4,223868.0,Toffolo et al.,2015-02-03,223868,Toffolo et al.,2015-02-03,optimal,,
-umps16B,7,3,180204.0,Toffolo et al.,2015-02-03,180204,Toffolo et al.,2015-02-03,optimal,,
-umps16B,7,2,167190.0,Toffolo et al.,2015-02-03,167190,Toffolo et al.,2015-02-03,optimal,,
+umps16B,8,3,178821.0,Toffolo et al.,2015-02-03,217764,Toffolo et al.,2015-02-03,open,17.88,solutions/legacy/14/umps16B_8_3.txt
+umps16B,8,2,170384.4,Xue et al.,2014-03-21,180540,Toffolo et al.,2017-07-22,open,5.63,solutions/legacy/52/umps16B_8_2.txt
+umps16B,7,4,223868.0,Toffolo et al.,2015-02-03,223868,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16B_7_4.txt
+umps16B,7,3,180204.0,Toffolo et al.,2015-02-03,180204,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16B_7_3.txt
+umps16B,7,2,167190.0,Toffolo et al.,2015-02-03,167190,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16B_7_2.txt
 umps16C,8,4,206368.8,Xue et al.,2014-03-21,,Toffolo et al.,2014-02-28,infeasible,,
-umps16C,8,3,175435.0,Toffolo et al.,2015-02-03,214993,Toffolo et al.,2015-02-03,open,18.40,
+umps16C,8,3,175435.0,Toffolo et al.,2015-02-03,214993,Toffolo et al.,2015-02-03,open,18.40,solutions/legacy/14/umps16C_8_3.txt
 umps16C,8,2,169697.7,Xue et al.,2014-03-21,179939,Toffolo et al.,2014-02-28,open,5.69,
-umps16C,7,4,209088.0,Toffolo et al.,2015-02-03,209088,Toffolo et al.,2015-02-03,optimal,,
-umps16C,7,3,176161.0,Toffolo et al.,2015-02-03,180483,Toffolo et al.,2015-02-03,open,2.39,
-umps16C,7,2,166479.0,Toffolo et al.,2015-02-03,166479,Toffolo et al.,2015-02-03,optimal,,
-umps18,9,4,213805.5,Xue et al.,2014-03-21,267311,Toffolo et al.,2015-06-25,open,20.02,
-umps18,9,3,186173.0,Toffolo et al.,2015-02-03,262987,Toffolo et al.,2015-02-03,open,29.21,
-umps18,8,4,197511.0,Toffolo et al.,2015-02-03,254155,Toffolo et al.,2015-02-03,open,22.29,
-umps18,8,3,187335.0,Toffolo et al.,2015-02-03,248302,Toffolo et al.,2015-02-03,open,24.55,
-umps18,7,4,200551.0,Toffolo et al.,2015-02-03,217502,Toffolo et al.,2015-02-03,open,7.79,
+umps16C,7,4,209088.0,Toffolo et al.,2015-02-03,209088,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16C_7_4.txt
+umps16C,7,3,176161.0,Toffolo et al.,2015-02-03,180483,Toffolo et al.,2015-02-03,open,2.39,solutions/legacy/14/umps16C_7_3.txt
+umps16C,7,2,166479.0,Toffolo et al.,2015-02-03,166479,Toffolo et al.,2015-02-03,optimal,,solutions/legacy/14/umps16C_7_2.txt
+umps18,9,4,213805.5,Xue et al.,2014-03-21,267311,Toffolo et al.,2015-06-25,open,20.02,solutions/legacy/38/umps18_9_4.txt
+umps18,9,3,186173.0,Toffolo et al.,2015-02-03,262987,Toffolo et al.,2015-02-03,open,29.21,solutions/legacy/14/umps18_9_3.txt
+umps18,8,4,197511.0,Toffolo et al.,2015-02-03,254155,Toffolo et al.,2015-02-03,open,22.29,solutions/legacy/14/umps18_8_4.txt
+umps18,8,3,187335.0,Toffolo et al.,2015-02-03,248302,Toffolo et al.,2015-02-03,open,24.55,solutions/legacy/14/umps18_8_3.txt
+umps18,7,4,200551.0,Toffolo et al.,2015-02-03,217502,Toffolo et al.,2015-02-03,open,7.79,solutions/legacy/14/umps18_7_4.txt
 umps20,10,5,250372.6,Oliveira et al.,2015-08-11,,,,open,,
-umps20,5,5,,,,250569,Toffolo et al.,2017-07-22,open,,
+umps20,5,5,,,,250569,Toffolo et al.,2017-07-22,open,,solutions/legacy/52/umps20_5_5.txt
 umps22,11,5,269735.5,Oliveira et al.,2015-08-11,,,,open,,
-umps22,5,5,,,,278842,Toffolo et al.,2017-07-22,open,,
+umps22,5,5,,,,278842,Toffolo et al.,2017-07-22,open,,solutions/legacy/52/umps22_5_5.txt
 umps24,12,6,301441.0,Oliveira et al.,2015-08-11,,,,open,,
-umps24,5,5,,,,305514,Toffolo et al.,2017-07-22,open,,
+umps24,5,5,,,,305514,Toffolo et al.,2017-07-22,open,,solutions/legacy/52/umps24_5_5.txt
 umps26,13,6,336854.4,Oliveira et al.,2015-08-11,,,,open,,
-umps26,5,5,324753.2,Oliveira et al.,2015-08-11,351932,Toffolo et al.,2017-07-22,open,7.72,
+umps26,5,5,324753.2,Oliveira et al.,2015-08-11,351932,Toffolo et al.,2017-07-22,open,7.72,solutions/legacy/52/umps26_5_5.txt
 umps28,14,7,377356.2,Oliveira et al.,2015-08-11,,,,open,,
-umps28,5,5,363541.4,Oliveira et al.,2015-08-11,390635,Toffolo et al.,2017-07-22,open,6.94,
+umps28,5,5,363541.4,Oliveira et al.,2015-08-11,390635,Toffolo et al.,2017-07-22,open,6.94,solutions/legacy/52/umps28_5_5.txt
 umps30,15,7,424537.6,Oliveira et al.,2015-08-11,,,,open,,
-umps30,5,5,415747.5,Oliveira et al.,2015-08-11,443739,Toffolo et al.,2017-07-22,open,6.31,
+umps30,5,5,415747.5,Oliveira et al.,2015-08-11,443739,Toffolo et al.,2017-07-22,open,6.31,solutions/legacy/52/umps30_5_5.txt
 umps32,16,8,468803.5,Oliveira et al.,2015-08-11,,,,open,,
-umps32,5,5,456685.9,Oliveira et al.,2015-08-11,491075,Toffolo et al.,2017-07-22,open,7.00,
+umps32,5,5,456685.9,Oliveira et al.,2015-08-11,491075,Toffolo et al.,2017-07-22,open,7.00,solutions/legacy/52/umps32_5_5.txt

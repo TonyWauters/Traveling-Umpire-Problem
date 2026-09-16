@@ -42,7 +42,7 @@ The TUP abstracts the central travel and fairness considerations in Major League
 instances/                 Canonical tournament and distance data
 results/                   Current results and the complete migrated history
 publications/              Chronological bibliography and BibTeX
-solutions/legacy/          Placeholder for legacy solution files no longer online
+solutions/legacy/          Restored legacy solution files and original archives
 submissions/<contributor>/ Community solution and metadata pairs
 validator/                 Original Java validator
 scripts/                   Validation and deterministic result-generation tools

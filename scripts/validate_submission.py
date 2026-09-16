@@ -168,25 +168,23 @@ def parse_submission_path(path: Path) -> tuple[str, int, int, str]:
     )
 
 
-def validate_submission(solution_path: Path) -> dict[str, Any]:
+def validate_solution(solution_path: Path, instance: str, q1: int, q2: int) -> int:
+    """Check an assignment and return its cost, independently of submission metadata."""
     solution_path = solution_path.resolve()
     if not solution_path.is_file():
         raise SubmissionError(f"solution does not exist: {solution_path}")
-    instance, q1, q2, contributor = parse_submission_path(solution_path)
     instance_path = INSTANCES / f"{instance}.txt"
     if not instance_path.is_file():
         raise SubmissionError(f"unknown benchmark instance: {instance}")
     n_teams = _read_n_teams(instance_path)
-    n_umpires = n_teams // 2
     n_rounds = 2 * n_teams - 2
     # Some official benchmark rows use q1 = n_umpires + 1. Both parameters are
     # direct window lengths, so the season length is the non-lossy general cap.
-    if q1 > n_rounds:
+    if not 1 <= q1 <= n_rounds:
         raise SubmissionError(f"q1 must be between 1 and {n_rounds} for {instance}")
-    if q2 > n_rounds:
+    if not 1 <= q2 <= n_rounds:
         raise SubmissionError(f"q2 must be between 1 and {n_rounds} for {instance}")
 
-    metadata = load_metadata(solution_path)
     _preflight_solution(solution_path, n_teams)
     try:
         completed = subprocess.run(
@@ -216,11 +214,21 @@ def validate_submission(solution_path: Path) -> dict[str, Any]:
     if not lines or not re.fullmatch(r"\d+", lines[-1]):
         raise SubmissionError(f"unexpected validator output: {completed.stdout!r}")
 
+    return int(lines[-1])
+
+
+def validate_submission(solution_path: Path) -> dict[str, Any]:
+    solution_path = solution_path.resolve()
+    if not solution_path.is_file():
+        raise SubmissionError(f"solution does not exist: {solution_path}")
+    instance, q1, q2, contributor = parse_submission_path(solution_path)
+    metadata = load_metadata(solution_path)
+    cost = validate_solution(solution_path, instance, q1, q2)
     return {
         "instance": instance,
         "q1": q1,
         "q2": q2,
-        "cost": int(lines[-1]),
+        "cost": cost,
         "contributor": contributor,
         "solution": solution_path.relative_to(ROOT).as_posix(),
         **metadata,

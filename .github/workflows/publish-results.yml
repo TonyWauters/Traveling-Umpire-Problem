@@ -6,6 +6,9 @@ on:
     branches: [main]
     paths:
       - "submissions/**"
+      - "solutions/legacy/**"
+      - "results/legacy-*.csv"
+      - "scripts/*.py"
 
 permissions:
   contents: write
@@ -46,7 +49,7 @@ jobs:
           commit-message: Update validated TUP results
           title: Update validated TUP results
           body: |
-            Rebuild the results tables from validated submissions accepted on `main`.
+            Rebuild the results tables from restored legacy solutions and validated submissions accepted on `main`.
 
             Merge after the required `validate` check passes and review is complete.
       # Explicit dispatch ensures validation runs for a PR made with GITHUB_TOKEN.
