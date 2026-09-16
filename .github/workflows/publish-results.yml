@@ -1,6 +1,7 @@
 name: Publish accepted results
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -8,6 +9,8 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
+  actions: write
 
 concurrency:
   group: publish-tup-results
@@ -15,6 +18,7 @@ concurrency:
 
 jobs:
   publish:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -29,15 +33,27 @@ jobs:
           python-version: "3.12"
       - name: Validate and rebuild result files
         run: python3 scripts/update_results.py
-      - name: Commit generated result files
-        shell: bash
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add results/best-known.csv results/submissions.csv results/README.md
-          if git diff --cached --quiet; then
-            echo "Results are already current."
-          else
-            git commit -m "Update validated TUP results"
-            git push
-          fi
+      - name: Open or update generated results pull request
+        id: results-pr
+        uses: peter-evans/create-pull-request@v8
+        with:
+          branch: automation/update-results
+          base: main
+          add-paths: |
+            results/best-known.csv
+            results/submissions.csv
+            results/README.md
+          commit-message: Update validated TUP results
+          title: Update validated TUP results
+          body: |
+            Rebuild the results tables from validated submissions accepted on `main`.
+
+            Merge after the required `validate` check passes and review is complete.
+      # Explicit dispatch ensures validation runs for a PR made with GITHUB_TOKEN.
+      # Dispatch on the PR branch so the check is attached to its head commit.
+      - name: Validate generated results pull request
+        if: steps.results-pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: gh workflow run benchmark.yml --ref automation/update-results
