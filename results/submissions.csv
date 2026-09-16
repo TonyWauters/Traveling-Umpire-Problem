@@ -1,1 +1,2 @@
 instance,q1,q2,cost,authors,algorithm,institution,submitted,publication,notes,contributor,solution
+umps16,8,3,178929,Tony Wauters,Improved version of the branch-and-bound algorithm from Toffolo et al. (2016).,KU Leuven,2026-09-16,,This is a first submission from this new experimental algorithm.,tony-wauters,submissions/tony-wauters/umps16_8_3.txt
